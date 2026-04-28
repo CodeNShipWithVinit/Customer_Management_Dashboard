@@ -19,7 +19,7 @@ function CustomerForm({ onCustomerAdded }) {
 
     setLoading(true);
     try {
-      await axios.post('/customers', { name, email, phone });
+      await axios.post('https://customer-management-dashboard-2vat.onrender.com/customers', { name, email, phone });
       setName('');
       setEmail('');
       setPhone('');

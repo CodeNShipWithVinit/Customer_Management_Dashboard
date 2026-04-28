@@ -10,7 +10,7 @@ function App() {
 
   const fetchCustomers = async () => {
     try {
-      const response = await axios.get('/customers');
+      const response = await axios.get('https://customer-management-dashboard-2vat.onrender.com/customers');
       setCustomers(response.data);
     } catch (err) {
       console.error('Failed to fetch customers:', err);
@@ -19,7 +19,7 @@ function App() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/customers/${id}`);
+      await axios.delete(`https://customer-management-dashboard-2vat.onrender.com/customers/${id}`);
       fetchCustomers();
     } catch (err) {
       console.error('Failed to delete customer:', err);
