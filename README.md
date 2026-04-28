@@ -7,7 +7,7 @@ A full-stack web application to add, view, and delete customers. Built with **Re
 ## Features
 
 - Add a customer with Name, Email, and Phone Number
-- View all customers in a responsive table with alternating row colours
+- View all customers in a responsive table
 - Delete any customer with a single click
 - Form validation with clear error messages
 - Fully responsive — works on mobile and desktop
